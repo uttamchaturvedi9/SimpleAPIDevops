@@ -15,7 +15,7 @@ variables:
 steps:
 
  - task: DotNetCoreCLI@2 
-  inputs:
+ - inputs:
     command: 'build' 
     projects: '**/SimpleAPI/SimpleAPI.csproj'
     arguments: '--configuration $(buildConfiguration)'
