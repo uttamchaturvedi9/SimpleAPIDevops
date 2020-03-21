@@ -15,5 +15,5 @@ variables:
 steps:
 
 
-- script: dotnet build SimpleAPI/SimpleAPI.csproj --configuration $(buildConfiguration)
+- script: dotnet build SimpleAPI/src/SimpleAPI.csproj --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
