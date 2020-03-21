@@ -12,6 +12,11 @@ pool:
 variables:
   buildConfiguration: 'Release'
 
+  - task: DotNetCoreCLI@2
+  inputs:
+    command: 'build' 
+    projects: 'src/SimpleAPI/SimpleAPI.csproj'
+
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
